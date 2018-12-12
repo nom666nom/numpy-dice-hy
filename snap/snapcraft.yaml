@@ -3,12 +3,12 @@ base: core18
 version: '1.0' 
 summary: Dice roller using numpy. 
 description: Dice roller using numpy. 
-grade: devel 
-confinement: devmode 
+grade: stable 
+confinement: strict 
 
 apps:
   numpy-dice-hy:
-    command: numpy-dice-hy/numpy_dice_hy.py
+    command: bin/numpy_dice_hy.py
 
 parts:
   numpy-dice-hy:
