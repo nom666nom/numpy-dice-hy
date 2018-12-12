@@ -17,4 +17,4 @@ parts:
 
 apps:
   numpy-dice-hy:
-    command: bin/numpy_dice_hy.py 
+    command: numpy_dice_hy.py 
