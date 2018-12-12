@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 #Simple Dice Rolling Script Using Numpy
 
@@ -8,24 +8,27 @@ import numpy as np
 #Getting User Input for dice
 print('Enter the number of dice you would like to roll. Max is 20.')
 dicenumber = input('Number of dice:') 
+dicenumber = int(dicenumber)
 
 if dicenumber > 20:
-    print "You took the blue pill, try again"
-    print "Max Number of Dice Allowed is 20"
+    print("You took the blue pill, try again")
+    print("Max Number of Dice Allowed is 20")
     exit()
 if dicenumber < 0:
-    print "Negative dice, really?"
+    print("Negative dice, really?")
     exit()
 
 print('Enter the number of sides.  Max is 20.')
 dicesides = input('Number of sides:')
+dicesides = int(dicesides)
+
 
 if dicesides > 20:
-    print "You took the blue pill, try again"
-    print "Max Number of Sides Allowed is 20"
+    print("You took the blue pill, try again")
+    print("Max Number of Sides Allowed is 20")
     exit()
 if dicesides < 0:
-    print "Negative sides, really?"
+    print("Negative sides, really?")
     exit()
 #The dimension command.  The +1 is needed to ensure the appropriate range creation.
 a = np.arange(1,dicesides + 1)
@@ -40,5 +43,5 @@ for i in range(0, dicenumber):
 dicenumber2 = 1
 for i in range(0, dicenumber):
     dice = np.random.choice(matrix[i])
-    print "Dice #:%s rolled a %s" % (dicenumber2,dice)
+    print ("Dice #:%s rolled a %s" % (dicenumber2,dice))
     dicenumber2 = dicenumber2 + 1
