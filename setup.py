@@ -9,6 +9,6 @@ setup(
    author='White Rabbit',
    author_email='heathy@gmail.com',
    packages=['numpy-dice-hy'],  #same as name
-   #scripts=['numpy-dice-hy.py'],
+   scripts=['bin/numpy_dice_hy.py'],
    install_requires=['numpy'], #external packages as dependencies
 )
