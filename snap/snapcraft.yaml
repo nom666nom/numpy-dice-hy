@@ -1,11 +1,14 @@
 name: numpy-dice-hy 
-base: core18 
-version: git 
+base: core18
+version: '1.0' 
 summary: Dice roller using numpy. 
 description: Dice roller using numpy. 
-
 grade: devel 
 confinement: devmode 
+
+apps:
+  numpy-dice-hy:
+    command: numpy-dice-hy/numpy_dice_hy.py
 
 parts:
   numpy-dice-hy:
@@ -15,6 +18,3 @@ parts:
     source-type: git
     python-packages: [numpy]
 
-apps:
-  numpy-dice-hy:
-    command: numpy_dice_hy.py 
